@@ -1,97 +1,30 @@
-# Casper Two
+# huj
 
-[Casper Two](https://github.com/eueung/hugo-casper-two) is a port of the [Casper](https://github.com/TryGhost/Casper), the default personal blogging theme for Ghost. While a legacy version (v1.x) has [already been ported](https://github.com/vjeantet/hugo-theme-casper) to Hugo years ago, it is incompatible with the recent 2.x version. So I ended up porting this new Casper version. 
+[huj](https://github.com/jeffsw/huj) is a Hugo theme derived from
+Eueung Mulyana's [Casper Two](https://github.com/eueung/hugo-casper-two)
+port of the Ghost Foundation's [Casper](https://github.com/TryGhost/Casper)
+theme.
 
-![Screenshot](https://raw.githubusercontent.com/eueung/hugo-casper-two/master/images/screenshot.png)
+The configuration parameters will differ significantly from the
+base Casper Two theme.  Please don't use this yourself just yet,
+unless you are prepared to troubleshoot on your own.
 
-## Theme Demo
-
-- [telematika.org](https://telematika.org/)
-- sample site - [github pages](https://eueung.github.io/hugo-casper-two/)
-
-## Installation
+# Installation
 
 Inside the folder of your Hugo site run:
 
-    $ cd themes
-    $ git clone https://github.com/eueung/hugo-casper-two.git casper-two
-
+```console
+$ git submodule add https://github.com/jeffsw/huj.git themes/huj
+$ git commit -m "added huj theme as a submodule"
+```
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
-## Sample Configuration
+# Sample Configuration
 
-The following `config.toml` is used for the demo site. 
+TBD
 
-```toml
-baseurl         = "/"
-theme           = "casper-two"
-languageCode    = "en-US"
-disqusShortname = ""
-paginate        = 6
-#SectionPagesMenu = "main"
+# License
 
-[params]
-  title       = "Hugo Casper Two"
-  subtitle    = "Port of Casper 2.x for Hugo"
-
-  cover       = "img/blog-cover.jpg"
-  description = "Here is a description of your site."
-  metaDescription = ""
-  googleAnalytics = ""
-  customCSS = []
-  RSSLink = ""
-
-  twitterName = "faketryghost"
-  fbName = "fakeghost"
-  githubName = "eueung"
-
-  logo = "hugo-logo.png"
-  orgName = "EM"
-  orgWebsite = "https://www.telematika.org"
-  orgDescription = "Here is a description placeholder for your org"
-
-  author = "EM"
-  authorAvatar = "img/ghost-icon.png"
-  authorLocation = "Bandung, ID"
-  authorWebsite = "https://eueung.github.io"
-  authorDescription = "Describe yourself.."
-
-  pageNotFoundTitle = "404 - Page not found"
-
-  #casper or caspertwo
-  singleViewStyle = "casper"
-
-[permalinks]
-  post = "/:slug/"
-
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 200
-
-[[menu.main]]
-  name = "Go"
-  url = "/tags/golang/"
-  weight = 100
-
-[[menu.main]]
-  name = "Food"
-  url = "/categories/food/"
-  weight = 99
-
-[[menu.main]]
-  name = "External"
-  url = "https://google.com/"
-  weight = 95
-```
-
-Sample content structure is given in the `exampleSite` folder. Have fun!
-
-![Screenshot](https://raw.githubusercontent.com/eueung/hugo-casper-two/master/images/telematika1.jpg)
-![Screenshot](https://raw.githubusercontent.com/eueung/hugo-casper-two/master/images/telematika2.jpg)
-
-## License
-
-This theme is released under the MIT license. For more information read the [License](//github.com/eueung/hugo-casper-two/blob/master/LICENSE.md).
-
+This theme is released under the MIT license.
+For more information, read the [LICENSE.md](LICENSE.md) file.
 
